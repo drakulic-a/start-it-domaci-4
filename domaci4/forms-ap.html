@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<title>Apartments</title>
+
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style-ap.css">
+</head>
+
+
+<body>
+	<header>
+		<img src="logo.png" alt="logo">
+		<nav>
+			<ul>
+				<li><a href="#"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+				<li><a href="#">About us</a></li>
+				<li><a href="#">Reservations</a></li>
+			</ul>
+		</nav>
+	</header>
+
+
+	<div class="intro-image">
+
+		<div class="welcome">
+			<h1>Welcome</h1>
+			<h2>Sasha's apartments</h2>
+		</div>
+		
+		
+	</div>
+
+	<article id="intro">
+
+		<h1>About us</h1>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+		
+	</article>
+
+
+	<article id="form-bg">
+
+	<h1>Reservations</h1>
+
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. </p>
+
+
+	<form>
+
+		<fieldset>
+			<legend>Personal info</legend>
+
+			<label for="name" class="info">Name and surname</label>
+			<input type="text" name="name" id="name" placeholder="Sasha Sam" required>
+
+			<label for="email" class="info">E-mail adress</label>
+			<input type="text" name="email" id="email" placeholder="example@gmail.com">
+
+			<label for="phone" class="info">Phone number</label>
+			<input type="number" name="phone" id="phone" placeholder="+xxx/xx/xx-xx-xxx">	
+		</fieldset>
+
+		<fieldset>
+			<legend>Accomodation</legend>
+
+		<section id="room-bed-number">
+
+				<label for="rooms" class="pad">Rooms</label>
+				<input type="number" name="rooms" value="1" max="10" required>
+
+				<label for="bed" class="pad">Beds</label>
+				<input type="number" name="bed" value="1" max="5" required>
+
+		</section>
+
+		<section id="adult-children-number">
+
+				<label for="adults" class="pad-a">Adults</label>
+				<input type="number" name="adults" value="1" required>
+
+				<label for="children" class="pad-k">Kids</label>
+				<input type="number" name="children" value="1" required>
+
+		</section>
+
+		<div class="hr"></div><!--horizontal line-->
+
+		<section id="check-in">
+
+				<label for="check-in" id="check-in-date">Check-in</label>
+				
+			<div class="together">
+				<input type="number" name="check-in" id="day" min="01" max="31" required >
+					
+				<select id="month" required>
+					<option value="January">January</option>
+					<option value="February">February</option>
+					<option value="March">March</option>
+					<option value="April">April</option>
+					<option value="May">May</option>
+					<option value="June">June</option>
+					<option value="July">July</option>
+					<option value="August">August</option>
+					<option value="September">September</option>
+					<option value="October">October</option>
+					<option value="November">November</option>
+					<option value="December">December</option>
+				</select>
+				<input type="number" name="check-in" id="year" min="2017" max="2018" required>
+			</div>
+		</section>
+
+		<section id="check-out">
+			<label for="check-out">Check-out</label>
+		
+		<div class="together">
+			<input type="number" name="check-out" id="day-out" min="01" max="31" required >
+			<select id="month-out" required>
+					<option value="January">January</option>
+					<option value="February">February</option>
+					<option value="March">March</option>
+					<option value="April">April</option>
+					<option value="May">May</option>
+					<option value="June">June</option>
+					<option value="July">July</option>
+					<option value="August">August</option>
+					<option value="September">September</option>
+					<option value="October">October</option>
+					<option value="November">November</option>
+					<option value="December">December</option>
+				</select>
+			<input type="number" name="check-out" id="year-out" min="2017" max="2018" required>
+		</div>
+		</section>
+
+		<div class="hr"></div>
+
+
+		<section>
+			<label for="transport" class="airport">Do you need transport from the airport?</label>
+			<input type="radio" name="transport" value="yes"> <p class="radio">Yes</p>
+			<input type="radio" name="transport" value="no"> <p class="radio">No</p>
+		</section>
+
+		<div class="hr"></div>
+
+
+		<section>
+			<label for="comment">Additional requests</label>
+			<textarea name="comment" placeholder="Additional requests..."></textarea>
+		</section>
+
+		<button type="submit">Send</button>
+
+		</fieldset>
+
+	</form>
+
+	</article>
+
+	<footer>
+
+		<ul id="contact">
+			<li><a href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+			<li><a href="#" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+			<li><a href="#" target="_blank"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
+		</ul>
+
+		<p class="location"><i class="fa fa-map-marker" aria-hidden="true">Zmaj Jovina 10, 21 000 Novi sad, Serbia </i></p>
+
+
+		
+	</footer>
+
+</body>
+</html>

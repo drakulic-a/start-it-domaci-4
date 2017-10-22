@@ -1,0 +1,188 @@
+body{
+	color: #242424;
+	font-family: 'Montserrat', sans-serif;
+}
+
+header{
+	height: 50px;
+	opacity: 0.8;
+}
+
+img{
+	height: 50px;
+	width: 120px;
+	padding: 10px;
+	position: absolute;
+	left: 30px;
+}
+
+nav{
+	float: right;
+	margin-right: 20px;
+	height: 50px;
+	padding: 10px;
+}
+
+ul{
+	list-style-type: none;
+	margin-top: 18px;
+}
+
+li{
+	display: inline-block;
+}
+
+a {
+	text-decoration: none;
+	color: #353535;
+	padding: 20px;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+	
+}
+
+a:hover{
+	color: #71B8B0;
+}
+
+.intro-image{
+
+	height: 560px;
+	width: 100%;
+	margin: auto;
+	background-image: url(welcome.jpg);
+	background-size:cover;
+}
+
+.welcome{
+	color: #FFFFFF;
+	opacity: 0.8;
+	text-align: center;
+	position: relative;
+	top: 150px;
+}
+
+#intro,#form-bg{
+	width: 70%;
+	margin: auto;
+	padding: 50px;
+	text-align: justify;
+	text-indent: 50px;
+	font-size:18px;
+}
+
+#form-bg{
+	background-image: url(ricks.jpg);
+	opacity: 0.6;
+	border-radius: 1%;
+}
+
+form{
+	margin: auto;
+	width: 50%;
+	color: #353535;
+	text-indent: 0px;
+	padding: inherit;
+}
+
+fieldset{
+	background-color: #DDDDDD;
+	border-color: #71B8B0;
+	border-radius: 10px;
+	text-align: center;
+}
+
+legend{
+	text-align: center;
+	font-weight: bold;
+}
+
+input,textarea,select{
+	background-color:#C8E3E0 ;
+	border-radius: 5px;
+	border-color: #71B8B0;
+}
+
+
+.info{
+	display: block;
+}
+.info,#name,#phone,#email{
+	padding: 8px;
+}
+
+input[type=number]{
+	width: 10%;
+}
+
+#phone{
+	width: auto;
+}
+
+.hr{
+	border-top: 2px solid #71B8B0;
+	padding: 10px;
+}
+
+#adult-children-number,#room-bed-number,#check-in,#check-out{
+	padding: 10px;
+}
+
+.together{
+	display: inline-block;
+}
+.pad{
+	padding: 5px;
+}
+.pad-a{
+	padding: 7px;
+}
+.pad-k{
+	padding: 9px;
+}
+.airport{
+	display: block;
+}
+
+#day,#month,#year{
+	position: relative;
+	left: 7px;
+}
+.radio{
+	display: inline-block;
+}
+
+textarea{
+
+	padding: 10px;
+	display: block;
+	width: 95%;
+
+}
+
+
+button{
+	padding: 12px;
+	margin-top: 10px;
+	width: 25%;
+	float: right;
+	border-radius: 5px;
+	border-color: #B10557;
+	color: #B10557;
+}
+
+#contact,.location{
+	margin: auto;
+	padding: 10px;
+}
+
+footer{
+	margin-bottom: 0px;
+	font-size: 10px;
+	height: 50px;
+	text-align: center;
+	opacity: 0.5;
+	color: #B10557;
+}
+
